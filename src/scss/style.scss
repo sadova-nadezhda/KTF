@@ -609,7 +609,7 @@
   &__container {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 33% 66%;
     gap: 24px;
     @media(max-width: 980px) {
       grid-template-columns: 100%;
@@ -668,7 +668,7 @@
 .trust {
   &__container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 33% 66%;
     align-items: flex-start;
     gap: 24px;
     @media(max-width: 1200px) {
@@ -860,7 +860,7 @@
 .rent {
   &__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, calc(50% - 12px));
     align-items: start;
     gap: 24px;
     @media (max-width: 767px) {
@@ -973,7 +973,7 @@
 .teams {
   &__container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 33% 66%;
     align-items: start;
     gap: 24px;
     @media (max-width: 767px) {
@@ -1521,7 +1521,7 @@
   }
   &__wrap {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 33% 66%;
     align-items: start;
     gap: 24px;
     @media (max-width: 767px) {
@@ -1768,7 +1768,7 @@
   }
   &__wrap {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 33% 66%;
     align-items: start;
     gap: 24px;
     @media (max-width: 767px) {
@@ -2061,7 +2061,7 @@
   &-page {
     &__container {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 33% 66%;
       gap: 24px;
       @media(max-width: 980px) {
         grid-template-columns: 100%;
