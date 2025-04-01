@@ -4,10 +4,7 @@ export function swiperInit() {
     spaceBetween: 24,
     initialSlide: 2,
     centeredSlides: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
+    grabCursor: true,
     navigation: {
       nextEl: ".about-next",
       prevEl: ".about-prev",
@@ -42,6 +39,11 @@ export function swiperInit() {
     centeredSlides: true,
     initialSlide: 2,
     loop: true,
+    grabCursor: true,
+    // autoplay: {
+    //   delay: 3500,
+    //   disableOnInteraction: false,
+    // },
     breakpoints: {
       1024: {
         spaceBetween: 24,
