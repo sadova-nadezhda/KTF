@@ -4,6 +4,10 @@ export function swiperInit() {
     spaceBetween: 24,
     initialSlide: 2,
     centeredSlides: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: ".about-next",
       prevEl: ".about-prev",

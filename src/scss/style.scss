@@ -346,6 +346,10 @@
     margin-bottom: 32px;
     color: var(--light, $light);
     line-height: 1.2em;
+    transform: translate3d(0,-50px,0);
+    opacity: 0;
+    animation: down-2 1s cubic-bezier(.175,.885,.32,1.275) forwards;
+    animation-delay: 0.2s;
     @media (max-width: 980px) {
       font-size: 36px;
     }
@@ -357,6 +361,10 @@
     max-width: 475px;
     color: var(--light, $light);
     font-size: 22px;
+    transform: translate3d(0,-50px,0);
+    opacity: 0;
+    animation: down-2 1s cubic-bezier(.175,.885,.32,1.275) forwards;
+    animation-delay: 0.3s;
     @media(max-width: 980px) {
       font-size: 20px;
     }
@@ -2432,5 +2440,29 @@
     &::before {
       background-color: var(--orange, $orange);
     }
+  }
+}
+
+// keyframes
+
+@keyframes down {
+  0% {
+    transform: translate3d(0,-100px,0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes down-2 {
+  0% {
+    transform: translate3d(0,-50px,0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
   }
 }

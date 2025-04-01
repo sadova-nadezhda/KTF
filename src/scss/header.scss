@@ -5,6 +5,7 @@
   right: 0;
   z-index: 9;
   padding: 26px 0;
+  animation: down 1s cubic-bezier(.175,.885,.32,1.275) forwards;
   @include transition;
   @media(max-width: 980px) {
     padding: 16px 0;
