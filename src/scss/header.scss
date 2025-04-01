@@ -1,0 +1,116 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  padding: 26px 0;
+  @include transition;
+  @media(max-width: 980px) {
+    padding: 16px 0;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+    padding: 9px 12px;
+    border-radius: 36px;
+    background: rgba(255, 255, 255, 0.25);
+    @media(max-width: 980px) {
+      border-radius: 26px;
+    }
+  }
+  &__logo {
+    width: 163px;
+    height: 58px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: left 0.3s ease-in-out;
+    // &.open {
+    //   left: 0;
+    // }
+    // @media(max-width: 980px) {
+    //   position: absolute;
+    //   top: 100%;
+    //   left: -100%;
+    //   display: block;
+    //   min-height: 100vh;
+    //   min-width: 320px;
+    //   padding: 40px;
+    //   background-color: var(--light, $light);
+    // }
+  }
+  &__button {
+    @media(max-width: 980px) {
+      display: none;
+    }
+  }
+  &__lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 53px;
+    border: 1px solid var(--light, $light);
+    border-radius: 100%;
+    select {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      color: var(--light, $light);
+      background: transparent;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    option {
+      color: var(--dark, $dark);
+    }
+  }
+  &__burger {
+    position: relative;
+    display: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: var(--green-light, $green-light);
+    cursor: pointer;
+    @include transition;
+    span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      height: 2px;
+      width: calc(100% - 24px);
+      background-color: var(--dark, $dark);
+      pointer-events: none;
+      @include transition;
+      &:nth-child(1){
+        top: 16px;
+      }
+      &:nth-child(2){
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+      &:nth-child(3){
+        bottom: 16px;
+      }
+    }
+    @media(max-width: 980px) {
+      // display: block;
+    }
+  }
+}
