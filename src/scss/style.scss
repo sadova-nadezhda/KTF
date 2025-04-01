@@ -1415,6 +1415,9 @@
     overflow: hidden;
     max-width: 845px;
     width: 100%;
+    .swiper {
+      border-radius: 300px;
+    }
     .swiper-wrapper {
       align-items: center;
     }
