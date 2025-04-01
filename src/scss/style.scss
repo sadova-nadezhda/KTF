@@ -180,6 +180,7 @@
     width: 100%;
     padding: 10px 12px;
     border-radius: 12px;
+    color: var(--dark, $dark);
     background: url(../img/down.svg) transparent no-repeat top 50% right 12px;
     cursor: pointer;
     option {
