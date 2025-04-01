@@ -59,8 +59,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 53px;
-    height: 53px;
+    width: 52px;
+    height: 52px;
     padding: 6px;
     border: 1px solid var(--light, $light);
     border-radius: 100%;
@@ -72,11 +72,10 @@
       width: 100%;
       height: 100%;
       margin: 0;
-      padding: 0;
+      padding: 8px;
       border: 0;
       color: var(--light, $light);
       background-color: transparent;
-      text-align: center;
       &:focus {
         outline: none;
       }
@@ -86,7 +85,6 @@
     }
     option {
       color: var(--dark, $dark);
-      text-align: center;
     }
   }
   &__burger {
