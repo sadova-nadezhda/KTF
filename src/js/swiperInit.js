@@ -57,23 +57,19 @@ export function swiperInit() {
   });
 
   const infoSwiper = new Swiper(".infoSwiper", {
-    slidesPerView: 1,
-    effect: "coverflow",
+    slidesPerView: "auto",
+    spaceBetween: -80,
     initialSlide: 3,
     loop: true,
-    watchSlidesVisibility: true,
-    centeredSlides: true,
+    // autoplay: {
+    //   delay: 3500,
+    //   disableOnInteraction: false,
+    // },
     grabCursor: true,
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 250,
-      modifier: 2,
-      slideShadows: false
-    },
     navigation: {
       nextEl: ".info-next",
       prevEl: ".info-prev",
     },
   });
+
 }

@@ -1411,15 +1411,8 @@
   }
   &__slider {
     overflow: hidden;
-    // max-width: 845px;
-    .swiper {
-      max-width: 410px;
-      // margin: 0;
-      overflow: visible;
-      @media (max-width: 767px) {
-        max-width: 265px;
-      }
-    }
+    max-width: 845px;
+    width: 100%;
     .swiper-wrapper {
       align-items: center;
     }
@@ -1429,6 +1422,30 @@
     width: 410px;
     height: 410px;
     overflow: hidden;
+    &.swiper-slide {
+      transform: scale(0.6) translateX(-60%);
+      @media (max-width: 767px) {
+        transform: scale(0.8) translateX(-30%)!important;
+      }
+      &-active {
+        transform: scale(1) translateX(0) !important;
+        transition: transform 0.3s linear;
+        z-index: 3;
+        @media (max-width: 767px) {
+          transform: scale(1) translateX(0) !important;
+        }
+      }
+      &-prev {
+        transition: transform 0.3s linear;
+      }
+      &-next {
+        transform: scale(0.8) translateX(-10%)!important;
+        z-index: 2;
+        @media (max-width: 767px) {
+
+        }
+      }
+    }
     img {
       display: block;
       width: 100%;
@@ -1438,8 +1455,8 @@
       aspect-ratio: 1 / 1;
     }
     @media (max-width: 767px) {
-      width: 265px;
-      height: 265px;
+      width: 254px;
+      height: 254px;
     }
   }
   &__arrows {
