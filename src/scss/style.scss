@@ -1425,7 +1425,7 @@
     &.swiper-slide {
       transform: scale(0.6) translateX(-60%);
       @media (max-width: 767px) {
-        transform: scale(0.8) translateX(-30%)!important;
+        transform: scale(0.8) translateX(-50%)!important;
       }
       &-active {
         transform: scale(1) translateX(0) !important;
@@ -1442,7 +1442,7 @@
         transform: scale(0.8) translateX(-10%)!important;
         z-index: 2;
         @media (max-width: 767px) {
-
+          transform: scale(0.8) translateX(-30%)!important;
         }
       }
     }
