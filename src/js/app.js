@@ -4,6 +4,7 @@ import { tabsInit } from './tabs.js';
 import { swiperInit } from './swiperInit.js';
 import { animateGsap } from './animateGsap.js';
 import { modalInit } from './modal.js';
+import { phoneMask } from './phoneMask.js';
 
 window.addEventListener("load", function () {
   menuInit();
@@ -12,4 +13,5 @@ window.addEventListener("load", function () {
   swiperInit();
   animateGsap();
   modalInit();
+  phoneMask();
 });

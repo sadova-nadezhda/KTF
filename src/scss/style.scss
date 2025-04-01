@@ -213,15 +213,19 @@
   background-color: rgba(0, 63, 130, 0.36);
   z-index: 9;
   &__container {
-    max-width: 555px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-width: 555px;
+    width: calc(100% - 32px);
     padding: 46px;
     border-radius: 20px;
     color: var(--light, $light);
     background-color: var(--orange, $orange);
+    @media(max-width: 767px) {
+      padding: 20px;
+    }
   }
   &__close {
     position: absolute;
@@ -240,10 +244,17 @@
     &:hover {
       cursor: pointer;
     }
+    @media(max-width: 767px) {
+      top: 16px;
+      right: 16px;
+    }
   }
   &__title {
     margin-bottom: 36px;
     text-align: center;
+    @media(max-width: 767px) {
+      margin-bottom: 26px;
+    }
   }
   &__form {
     form {
@@ -257,6 +268,9 @@
       border: 0;
       &::placeholder {
         color: rgba(29, 27, 27, 0.5);
+      }
+      @media(max-width: 767px) {
+        padding: 16px;
       }
     }
     button {
