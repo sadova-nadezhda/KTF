@@ -1,6 +1,6 @@
 export function swiperInit() {
   const aboutSwiper = new Swiper(".aboutSwiper", {
-    slidesPerView: "auto",
+    slidesPerView: 1,
     spaceBetween: 24,
     initialSlide: 2,
     centeredSlides: true,
@@ -15,7 +15,13 @@ export function swiperInit() {
                 this.slideTo(1, 300);
             }
         }
-    }
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: "auto",
+        spaceBetween: 24,
+      },
+    },
   });
 
   const gallerySwiper2 = new Swiper(".gallerySwiper2", {
