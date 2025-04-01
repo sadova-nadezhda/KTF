@@ -20,18 +20,6 @@ export function animateGsap() {
       }
     );
   });
-  gsap.utils.toArray(".down").forEach(element => {
-    gsap.fromTo(element,
-      { yPercent: -60, opacity: 0 },
-      {
-        duration: 1.2,
-        opacity: 1,
-        yPercent: 0,
-        ease: "power2.out",
-        scrollTrigger: { trigger: element, ...scrollTriggerConfig }
-      }
-    );
-  });
   
   gsap.utils.toArray(".flip").forEach(element => {
     gsap.fromTo(element,
